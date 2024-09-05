@@ -32,6 +32,10 @@ a {
 }
 .header {
   background-color: #333533;
+  height: 376px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header .title {
   color: #ffd100;
@@ -40,7 +44,6 @@ a {
 .header .position {
   color: #fafafa;
   font-size: 32px;
-  height: 376px;
 }
 .button {
   color: #ffd100;
