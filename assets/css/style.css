@@ -31,14 +31,17 @@ body {
 a {
   text-decoration: none;
 }
+.header,
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0;
+}
 
 .header {
   background-color: #333533;
   height: 376px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 45px 0;
 }
 .header .title {
   margin: 0 50px;
@@ -55,18 +58,18 @@ a {
   margin: 40px 0;
   font-weight: 400;
 }
-.header .position i {
-  color: #ffd100;
-}
+
 .button {
   color: #ffd100;
   border: 1px solid #ffd100;
   border-radius: 4px;
   padding: 8px 24px;
 }
-.button {
-  color: #ffd100;
+.button:hover {
+  background-color: #ffd100;
+  color: #333533;
 }
+
 .lang {
   color: #fafafa;
   border: 1px solid #fafafa;
@@ -80,4 +83,12 @@ a {
   width: 290px;
   height: 290px;
   border-radius: 50%;
+}
+
+nav {
+  width: 250px;
+}
+.sections {
+  width: 700px;
+  justify-content: center;
 }
