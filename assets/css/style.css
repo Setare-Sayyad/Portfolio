@@ -1,7 +1,7 @@
 @font-face {
   font-family: "poppins";
-  src: url("./assets/fonts/woff/Poppins-Light.woff") format("woff"),
-    url("./assets/fonts/ttf/Poppins-Light.ttf") format("ttf");
+  src: url("/assets/fonts/woff/Poppins-Light.woff") format("woff"),
+    url("/assets/fonts/ttf/Poppins-Light.ttf") format("ttf");
   font-weight: 300;
 }
 @font-face {
@@ -16,9 +16,9 @@
     url("./assets/fonts/ttf/Poppins-Regular.ttf") format("ttf");
   font-weight: 500;
 }
+/* GLOBALLY */
 * {
-  font-family: "Poppins", sans-serif !important;
-  color: #333533;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 html {
@@ -26,17 +26,32 @@ html {
 }
 body {
   background-color: #fafafa;
+  color: #333533;
   margin: 0;
 }
+/* CONTAINER */
 a {
   text-decoration: none;
 }
 h2 {
   font-weight: 400;
 }
+h5 {
+  margin-bottom: 5px;
+  color: #a0a0a0;
+  font-weight: 500;
+  font-size: 18px;
+}
 ul {
   list-style: none;
   padding: 0;
+}
+/* HEADER */
+.header .title h1,
+.position i,
+.button,
+.button i {
+  color: #ffd100;
 }
 
 .header,
@@ -55,7 +70,6 @@ ul {
   margin: 0 50px;
 }
 .header .title h1 {
-  color: #ffd100;
   font-size: 56 px;
   margin: 0;
   line-height: 1;
@@ -67,14 +81,18 @@ ul {
 }
 
 .button {
-  color: #ffd100;
   border: 1px solid #ffd100;
   border-radius: 4px;
   padding: 8px 24px;
 }
-.button:hover {
+
+.button:hover,
+.button:hover i {
   background-color: #ffd100;
   color: #333533;
+}
+.button i {
+  margin: 6px;
 }
 
 .lang {
@@ -89,32 +107,123 @@ ul {
 .lang:hover {
   opacity: 1;
 }
+.lang i {
+  color: #fafafa;
+  margin-right: 4px;
+}
 .header img {
   width: 290px;
   height: 290px;
   border-radius: 50%;
 }
-
+/* NAVBAR */
 nav {
   width: 250px;
   font-size: 24px;
+  font-weight: 400;
 }
 nav ul li {
   cursor: pointer;
 }
+nav li .active {
+  font-weight: 500;
+}
+nav ul li .marker {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #333533;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 42px;
+  margin-right: 12px;
+}
+nav ul li.active .marker,
+nav ul li:hover .marker {
+  background-color: #333533;
+  color: #ffd100;
+  font-size: 22px;
+}
+nav ul li:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 48px;
+  border-left: 1px dashed #333533;
+  margin: 16px 0px 16px 21px;
+}
+/* SECTIONS */
 .sections {
   width: 700px;
-  justify-content: center;
+  border-left: 1px solid #333533;
+  padding-left: 50px;
 }
-#email {
+.contact {
   display: flex;
-  padding: 0;
-  margin: 20px 0;
-  justify-content: left;
 }
-
-.phone-number {
-  display: flex;
-  padding: 0;
-  justify-content: flex-end;
+.contact div {
+  width: 50%;
+}
+.contact p {
+  margin: 0;
+}
+.contact p i {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #a0a0a0;
+  cursor: pointer;
+}
+.contact p i:hover {
+  color: #333533;
+}
+.socials li {
+  display: inline-block;
+  margin-right: 24px;
+}
+.socials li a span {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+}
+.socials li span.linkedin {
+  background-image: url("../icon/social/linkedin.png");
+}
+.socials li:hover span.linkedin {
+  background-image: url("../icon/social/linkedin-hover.png");
+}
+.socials li span.github {
+  background-image: url("../icon/social/github.png");
+}
+.socials li:hover span.github {
+  background-image: url("../icon/social/github-hover\ \(1\).png");
+}
+.socials li span.stackoverflow {
+  background-image: url("../icon/social/stackoverflow.png");
+}
+.socials li:hover span.stackoverflow {
+  background-image: url("../icon/social/stackoverflow-hover.png");
+}
+.socials li span.twitter {
+  background-image: url("../icon/social/twitter.png");
+}
+.socials li:hover span.twitter {
+  background-image: url("../icon/social/twitter-hover.png");
+}
+.socials li span.telegram {
+  background-image: url("../icon/social/telegram.png");
+}
+.socials li:hover span.telegram {
+  background-image: url("../icon/social/telegram-hover.png");
+}
+.socials li span.whatsapp {
+  background-image: url("../icon/social/whatsapp.png");
+}
+.socials li:hover span.whatsapp {
+  background-image: url("../icon/social/whatsapp-hover.png");
+}
+.socials li span.instagram {
+  background-image: url("../icon/social/instagram.png");
+}
+.socials li:hover span.instagram {
+  background-image: url("../icon/social/instagram-hover.png");
 }
