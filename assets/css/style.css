@@ -1,6 +1,6 @@
 @font-face {
   font-family: "poppins";
-  src: url("/assets/fonts/woff/Poppins-Light.woff") format("woff"),
+  src: url("/fonts/woff/Poppins-Light\ \(1\).woff") format("woff"),
     url("/assets/fonts/ttf/Poppins-Light.ttf") format("ttf");
   font-weight: 300;
 }
@@ -41,6 +41,9 @@ h5 {
   color: #a0a0a0;
   font-weight: 500;
   font-size: 18px;
+}
+h6 {
+  margin: 0;
 }
 ul {
   list-style: none;
@@ -158,6 +161,9 @@ nav ul li:not(:last-child)::after {
   border-left: 1px solid #333533;
   padding-left: 50px;
 }
+/* .sections .section:last-child {
+  width: 880px;
+} */
 .contact {
   display: flex;
 }
@@ -226,4 +232,52 @@ nav ul li:not(:last-child)::after {
 }
 .socials li:hover span.instagram {
   background-image: url("../icon/social/instagram-hover.png");
+}
+.skills li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px 24px;
+}
+.skills li img {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.skills li .title {
+  font-weight: 500;
+}
+.skills li span i {
+  padding: 10px 12px;
+  border-left: 1px solid #a0a0a0;
+}
+.other-skills li {
+  border: 1px solid #a0a0a0;
+  border-radius: 24px;
+  display: inline-block;
+  padding: 4px 16px;
+  margin: 0px 16px 18px 0px;
+}
+.project {
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  padding: 11px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project .title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 12px;
+}
+.project .description {
+  font-size: 14px;
+}
+.tech {
+  display: flex;
+  justify-content: space-between;
 }
