@@ -42,6 +42,10 @@ h5 {
   font-weight: 500;
   font-size: 18px;
 }
+#pro {
+  color: #333533;
+  font-weight: 500;
+}
 h6 {
   margin: 0;
 }
@@ -161,9 +165,9 @@ nav ul li:not(:last-child)::after {
   border-left: 1px solid #333533;
   padding-left: 50px;
 }
-/* .sections .section:last-child {
+.sections .section:last-child {
   width: 880px;
-} */
+}
 .contact {
   display: flex;
 }
@@ -264,7 +268,7 @@ nav ul li:not(:last-child)::after {
   border: 1px solid #a0a0a0;
   border-radius: 8px;
   padding: 11px;
-  width: 25%;
+  width: 220px;
   display: flex;
   flex-direction: column;
 }
@@ -280,4 +284,48 @@ nav ul li:not(:last-child)::after {
 .tech {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tech ul li {
+  display: inline-block;
+}
+.tech ul li img {
+  width: 25px;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin-right: 20px;
+  margin-bottom: 36px;
+}
+/* .project {
+  width: 880;
+} */
+.project .buttons {
+  display: flex;
+}
+.project .buttons a {
+  width: 50%;
+  color: #333533;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+}
+.project .buttons a i {
+  margin-right: 5px;
+}
+.project .buttons a:last-child,
+.project .buttons a:first-child:hover {
+  border: 1px solid #333533;
+  border-radius: 3px;
+}
+.project .buttons a:last-child:hover {
+  color: #fafafa;
+  background-color: #333533;
 }
