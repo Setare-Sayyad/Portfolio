@@ -19,7 +19,7 @@
 /* GLOBALLY */
 * {
   font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
+  transition: all 0.3s;
 }
 html {
   font-size: 18px;
@@ -303,11 +303,13 @@ nav ul li:not(:last-child)::after {
   margin-right: 20px;
   margin-bottom: 36px;
 }
-/* .project {
-  width: 880;
-} */
 .project .buttons {
   display: flex;
+}
+.project .buttons i {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 5px;
 }
 .project .buttons a {
   width: 50%;
@@ -315,6 +317,7 @@ nav ul li:not(:last-child)::after {
   font-size: 13px;
   font-weight: 500;
   padding: 4px 8px;
+  text-align: center;
   border: 1px solid transparent;
 }
 .project .buttons a i {
@@ -324,6 +327,10 @@ nav ul li:not(:last-child)::after {
 .project .buttons a:first-child:hover {
   border: 1px solid #333533;
   border-radius: 3px;
+}
+.project .buttons a:last-child {
+  border: 1px solid #333533;
+  margin-left: 4px;
 }
 .project .buttons a:last-child:hover {
   color: #fafafa;
